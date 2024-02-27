@@ -1,4 +1,4 @@
-package com.mballem.demoparkapi.web.controller.dto;
+package com.mballem.demoparkapi.web.dto;
 
 import lombok.*;
 

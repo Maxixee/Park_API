@@ -1,13 +1,12 @@
 package com.mballem.demoparkapi.web.controller;
 
 import com.mballem.demoparkapi.entity.Usuario;
-import com.mballem.demoparkapi.repository.UsuarioRepository;
 import com.mballem.demoparkapi.service.UsuarioService;
-import com.mballem.demoparkapi.web.controller.dto.UsuarioCreateDto;
-import com.mballem.demoparkapi.web.controller.dto.UsuarioResponseDto;
-import com.mballem.demoparkapi.web.controller.dto.UsuarioSenhaDto;
-import com.mballem.demoparkapi.web.controller.dto.mapper.UsuarioMapper;
-import com.mballem.demoparkapi.web.controller.exception.ErrorMessage;
+import com.mballem.demoparkapi.web.dto.UsuarioCreateDto;
+import com.mballem.demoparkapi.web.dto.UsuarioResponseDto;
+import com.mballem.demoparkapi.web.dto.UsuarioSenhaDto;
+import com.mballem.demoparkapi.web.dto.mapper.UsuarioMapper;
+import com.mballem.demoparkapi.web.exception.ErrorMessage;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

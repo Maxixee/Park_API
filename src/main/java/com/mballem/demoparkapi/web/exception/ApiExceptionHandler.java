@@ -1,4 +1,4 @@
-package com.mballem.demoparkapi.web.controller.exception;
+package com.mballem.demoparkapi.web.exception;
 
 import com.mballem.demoparkapi.exception.EntityNotFoundException;
 import com.mballem.demoparkapi.exception.UsernameUniqueViolationException;
