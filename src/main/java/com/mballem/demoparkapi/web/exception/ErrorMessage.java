@@ -8,7 +8,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.FieldError;
 
-import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,6 +22,9 @@ public class ErrorMessage {
     private String message;
     @JsonInclude(JsonInclude.Include.NON_NULL)
     private Map<String, String> errors;
+
+    public ErrorMessage() {
+    }
 
     public ErrorMessage(HttpServletRequest request, HttpStatus status, String message) {
         this.path = request.getRequestURI();
@@ -43,8 +45,9 @@ public class ErrorMessage {
 
     private void addErrors(BindingResult result) {
         this.errors = new HashMap<>();
-        for(FieldError fieldError : result.getFieldErrors()){
+        for (FieldError fieldError : result.getFieldErrors()) {
             this.errors.put(fieldError.getField(), fieldError.getDefaultMessage());
         }
     }
+
 }

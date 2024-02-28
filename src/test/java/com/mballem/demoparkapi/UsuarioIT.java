@@ -21,8 +21,6 @@ public class UsuarioIT {
     @Autowired
     WebTestClient testClient;
 
-    //revisar essa classe de testes depois
-
     @Test
     public void createUsuario_ComUsernameEPasswordValidos_RetornarUsuarioCriadoComStatus201() {
         UsuarioResponseDto responseBody = testClient
