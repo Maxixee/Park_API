@@ -1,7 +1,6 @@
 package com.mballem.demoparkapi.web.controller;
 
 import com.mballem.demoparkapi.entity.Cliente;
-import com.mballem.demoparkapi.entity.Usuario;
 import com.mballem.demoparkapi.jwt.JwtUserDetails;
 import com.mballem.demoparkapi.repository.projection.ClienteProjection;
 import com.mballem.demoparkapi.service.ClienteService;
