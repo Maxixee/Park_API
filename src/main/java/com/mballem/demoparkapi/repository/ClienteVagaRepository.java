@@ -2,10 +2,11 @@ package com.mballem.demoparkapi.repository;
 
 import com.mballem.demoparkapi.entity.ClienteVaga;
 import com.mballem.demoparkapi.repository.projection.ClienteVagaProjection;
-import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
-import java.awt.print.Pageable;
+
 import java.util.Optional;
 
 public interface ClienteVagaRepository extends JpaRepository<ClienteVaga, Long> {
